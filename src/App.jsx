@@ -1,6 +1,13 @@
 import { useRef, useState, useEffect } from "react";
 
 import "./App.css";
+import SpidermanImg from "./assets/Picsart_25-10-15_08-50-01-756.png";
+import PhotoImg from "./assets/IMG_20251012_172058.jpg";
+import InstagramIcon from "./assets/instagram.png";
+import SnapchatIcon from "./assets/snapchat.png";
+import PinterestIcon from "./assets/pinterest.png";
+import WhatsAppIcon from "./assets/whatsApp.png";
+import SongMp3 from "./assets/M(MP3_160K).mp3";
 
 export default function App() {
   const audioRef = useRef(null);
@@ -68,7 +75,7 @@ export default function App() {
   return (
     <div className="h-[100vh] bg-[#b0183d] font-Messiri flex flex-col gap-3 items-center justify-center p-6">
       <img
-        src="/src/assets/Picsart_25-10-15_08-50-01-756.png"
+        src={SpidermanImg}
         alt="Spider-man"
         className={`w-30 h-30 absolute top-0 left-0 ${
           isGiggling ? "giggle-animation" : ""
@@ -122,7 +129,7 @@ export default function App() {
       <div className="max-w-sm w-full bg-white rounded-3xl shadow-lg p-5 text-center">
         {/* Image */}
         <img
-          src="/src/assets/IMG_20251012_172058.jpg"
+          src={PhotoImg}
           alt="photo"
           className="w-60 h-60 mx-auto rounded-xl object-cover mb-4 shadow"
         />
@@ -198,7 +205,7 @@ export default function App() {
 
         <audio
           ref={audioRef}
-          src="../src/assets/M(MP3_160K).mp3"
+          src={SongMp3}
           onTimeUpdate={handleTimeUpdate}
         ></audio>
       </div>
@@ -214,7 +221,7 @@ export default function App() {
           >
             <img
               className="w-10 h-10"
-              src="/src/assets/instagram.png"
+              src={InstagramIcon}
               alt="instagram-icon"
             />
             <p className="text-xl font-bold">انستغرام</p>
@@ -224,11 +231,7 @@ export default function App() {
             target="_blank"
             className=" p-2 bg-white flex items-center justify-center rounded-xl shadow-md gap-2"
           >
-            <img
-              className="w-10 h-10"
-              src="/src/assets/snapchat.png"
-              alt="snapchat-icon"
-            />
+            <img className="w-10 h-10" src={SnapchatIcon} alt="snapchat-icon" />
             <p className="text-xl font-bold">سناب شات</p>
           </a>
           <a
@@ -238,7 +241,7 @@ export default function App() {
           >
             <img
               className="w-10 h-10"
-              src="/src/assets/pinterest.png"
+              src={PinterestIcon}
               alt="pinterest-icon"
             />
             <p className="text-xl font-bold">بينتريست</p>
@@ -248,11 +251,7 @@ export default function App() {
             target="_blank"
             className=" p-2 bg-white flex items-center justify-center rounded-xl shadow-md gap-2"
           >
-            <img
-              className="w-10 h-10"
-              src="/src/assets/whatsapp.png"
-              alt="whatsapp-icon"
-            />
+            <img className="w-10 h-10" src={WhatsAppIcon} alt="whatsapp-icon" />
             <p className="text-xl font-bold">واتساب</p>
           </a>
         </div>
