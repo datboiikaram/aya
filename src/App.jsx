@@ -68,7 +68,7 @@ export default function App() {
   return (
     <div className="h-[100vh] bg-[#b0183d] font-Messiri flex flex-col gap-3 items-center justify-center p-6">
       <img
-        src="./src/assets/Picsart_25-10-15_08-50-01-756.png"
+        src="assets/Picsart_25-10-15_08-50-01-756.png"
         alt="Spider-man"
         className={`w-30 h-30 absolute top-0 left-0 ${
           isGiggling ? "giggle-animation" : ""
@@ -122,7 +122,7 @@ export default function App() {
       <div className="max-w-sm w-full bg-white rounded-3xl shadow-lg p-5 text-center">
         {/* Image */}
         <img
-          src="./src/assets/IMG_20251012_172058.jpg"
+          src="assets/IMG_20251012_172058.jpg"
           alt="photo"
           className="w-60 h-60 mx-auto rounded-xl object-cover mb-4 shadow"
         />
@@ -214,7 +214,7 @@ export default function App() {
           >
             <img
               className="w-10 h-10"
-              src="./src/assets/instagram.png"
+              src="assets/instagram.png"
               alt="instagram-icon"
             />
             <p className="text-xl font-bold">انستغرام</p>
@@ -226,7 +226,7 @@ export default function App() {
           >
             <img
               className="w-10 h-10"
-              src="./src/assets/snapchat.png"
+              src="assets/snapchat.png"
               alt="snapchat-icon"
             />
             <p className="text-xl font-bold">سناب شات</p>
@@ -238,7 +238,7 @@ export default function App() {
           >
             <img
               className="w-10 h-10"
-              src="./src/assets/pinterest.png"
+              src="assets/pinterest.png"
               alt="pinterest-icon"
             />
             <p className="text-xl font-bold">بينتريست</p>
@@ -250,7 +250,7 @@ export default function App() {
           >
             <img
               className="w-10 h-10"
-              src="./src/assets/whatsapp.png"
+              src="assets/whatsapp.png"
               alt="whatsapp-icon"
             />
             <p className="text-xl font-bold">واتساب</p>
