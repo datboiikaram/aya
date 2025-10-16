@@ -67,7 +67,7 @@ export default function App() {
     const giggleInterval = setInterval(() => {
       setIsGiggling(true);
       setTimeout(() => setIsGiggling(false), 1000); // Animation lasts 1 second
-    }, 10000); // Every 10 seconds
+    }, 6000); // Every 10 seconds
 
     return () => clearInterval(giggleInterval);
   }, []);
@@ -136,12 +136,13 @@ export default function App() {
 
         {/* Arabic text */}
         <p className="text-gray-800 mb-5 leading-relaxed font-bold">
-          انتي بقيتي الأغنية دي بالنسبالي. عرفتها بسببك وعشقتها من بعدك. آسف إني
-          فرطت فيكي وسيبتك تروحي
+          انتي بقيتي الأغنية دي بالنسبالي. عرفتها بسببك وعشقتها من بعدك. ودايما
+          بسمع الفيديو وانتي بتغنيهالي وصوتك دايما علي بالي
+          <br /> آسف إني فرطت فيكي وسيبتك تروحي
         </p>
 
         {/* Custom audio player */}
-        <div className="bg-pink-300 rounded-2xl p-4">
+        <div className="bg-pink-300 rounded-2xl p-4 font-sans">
           <div className="flex items-center justify-between text-sm">
             <span>{formatTime(currentTime)}</span>
             <input
